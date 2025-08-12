@@ -16,7 +16,8 @@ logger = set_up_logging()
 @router.post("/create")
 def create_student(json_data: ValidateStudentCreate):
     try:
-        logger.info("Add student")
+        logger.info("[Add student - API]")
+        logger.info("Amrutha made this change in amrutha-dev")
         fname=json_data.fname
         lname=json_data.lname
         mobile=json_data.mobile
