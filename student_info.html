@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Info</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        table { border-collapse: collapse; width: 100%; }
+        th, td { padding: 8px; border: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+    <h1>Student Info</h1>
+    <table>
+        <tr>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Email</th>
+            <th>mobile</th>
+
+        </tr>
+        {% for student in students %}
+        <tr>
+            <td>{{ student.fname }}</td>
+            <td>{{ student.lname }}</td>
+            <td>{{ student.email }}</td>
+            <td>{{ student.mobile }}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>

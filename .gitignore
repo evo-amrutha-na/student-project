@@ -1,0 +1,20 @@
+__pycache__/
+*.pyc
+
+# Virtual Environment
+env/
+venv/
+ENV/
+.env
+.venv
+.env.*
+!.env.example
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Deployment files
+*.zip
