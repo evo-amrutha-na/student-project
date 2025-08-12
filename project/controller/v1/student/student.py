@@ -17,7 +17,7 @@ logger = set_up_logging()
 def create_student(json_data: ValidateStudentCreate):
     try:
         logger.info("[Add student - API]")
-        logger.info("Amrutha made this change in amrutha-dev")
+        logger.info("cyril deleted this change from cyril-dev")
         fname=json_data.fname
         lname=json_data.lname
         mobile=json_data.mobile
